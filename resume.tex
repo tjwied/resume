@@ -1,0 +1,144 @@
+%-------------------------
+% Resume in Latex
+% Author : Sourabh Bajaj
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+%\addtolength{\oddsidemargin}{-0.5in}
+%\addtolength{\evensidemargin}{-0.5in}
+%\addtolength{\textwidth}{1in}
+%\addtolength{\topmargin}{-.5in}
+%\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeIt}[1]{
+  \item\small{ #1 }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheadin}[6]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\definecolor{ao(english)}{rgb}{0.0, 0.5, 0.0}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{\Large \color{ao(english)} Tyler Wied} & {} \\
+	Seattle, WA & \href{mailto:tjwied@gmail.com}{\color{Blue} tjwied@gmail.com} \\
+	(920) 634-9618 & LinkedIn: \href{https://www.linkedin.com/in/tylerwied/}{\color{Blue} tylerwied} \\
+	{} & GitHub: \href{https://github.com/tjwied/}{\color{Blue} tjwied} \\
+\end{tabular*}
+
+%--------PROGRAMMING SKILLS------------
+\section{Data Science Skills}
+  \resumeSubHeadingListStart
+    \item{\small\textbf{Languages}{: Python, SQL, R, bash}}
+    \item{\small\textbf{Machine Learning \& Statistics}{: Supervised and unsupervised learning, Dimensionality Reduction, Natural Language Processing, Network Analysis, ANOVA, $\chi^2$ test, bootstrap}}
+    \item{\small\textbf{Tools}{: NumPy, pandas, Scikit-learn, Nltk, Dash, Jupyter, Matplotlib}}
+    \item{\small\textbf{Computing}{: High-performance and parallel computing, Unix, SSH}}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Insight Data Science}{Seattle, WA}
+      {Data Science Fellow}{Jan 2019 - Present}
+      \resumeItemListStart
+        \resumeIt{Consulted for a cryptocurrency hedge fund to build a webapp that structures Twitter activity related to cryptocurrencies by identifying trending accounts, topics, and gauges community-level attitudes.}
+	\resumeIt{Scraped 200k+ Tweets and used \textbf{\color{red} network analysis} to construct graphs, identify central nodes, and detect communities.}
+	\resumeIt{Used \textbf{\color{red} NLP} to identify topics of conversation (LDA with tf-idf), and performed \textbf{\color{red} sentiment analysis} on Tweets to quantify user attitudes.}
+	\resumeIt{Built webapp with Dash to visualize and interact with results to discover actionable information.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Johns Hopkins University School of Medicine}{Baltimore, MD}
+      {Post-Doctoral Research Fellow \& PhD Candidate}{2012 - 2018}
+      \resumeItemListStart
+	\resumeIt{To understand glutamate receptor function at an atomic-level, collected and processed \textbf{\color{red} 10+ TB of simulation} data (python, bash, Tcl) and conducted numerical analysis to \textbf{\color{red} classify} simulation ”snapshots” into discrete states (numpy), calculate physical properties, and perform \textbf{\color{red} principal component analysis} to identify major modes of motion (R).}
+	\resumeIt{Discovered novel flexibility in the GluK2 glutamate receptor using physics-based simulation methods; successfully validated simulation-based model with \textbf{\color{red} $\chi^2$ goodness-of-fit test}.}
+	\resumeIt{Delivered data-driven recommendations for future toxin research from analysis of mutation and simulation datasets, \textbf{\color{red} reducing search space approximately 90 \%}}
+      \resumeItemListEnd
+
+    \resumeSubheading
+    	{University of Wisconsin-Madison}{Madison, WI}
+	{Undergraduate Research Assistant}{2009 - 2012}
+	\resumeItemListStart
+		\resumeIt{Developed and validated a new mouse model for mania for a line of mice that are 2x more active than control mice. Collected and extracted data from mouse behavioral experiments for hyperactivity, and performed \textbf{\color{red} one-way ANOVA} tests to identify differences between control and experimental mouse groups.}
+	\resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Johns Hopkins University School of Medicine}{Baltimore, MD}
+      {PhD in Biophysics}{2012 -- 2018}
+    \resumeSubheading
+      {University of Wisconsin-Madison}{Madison, WI}
+      {BS in Biochemistry}{2008 -- 2012}
+  \resumeSubHeadingListEnd
+
+\end{document}
