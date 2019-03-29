@@ -109,7 +109,7 @@
       {Data Science Fellow}{Jan 2019 - Present}
       \resumeItemListStart
 	\resumeIt{Consulted for a hedge fund to identify key trends across five major cryptocurrencies.}
-	\resumeIt{Developed project road map and architected solution using  \textbf{\color{maroon} machine learning}, \textbf{\color{maroon} natural language processing} (topic modeling, tf-idf, sentiment analysis), and \textbf{\color{maroon} network analysis}.}
+	\resumeIt{Developed project roadmap and architected solution using  \textbf{\color{maroon} machine learning}, \textbf{\color{maroon} natural language processing} (topic modeling, tf-idf, sentiment analysis), and \textbf{\color{maroon} network analysis}.}
 	\resumeIt{Delivered an \textbf{\color{maroon} interactive dashboard} that displays networks, attitude levels, and the top 20 topics across 200k+ Tweets and 25k+ Twitter users.}
       \resumeItemListEnd
 
